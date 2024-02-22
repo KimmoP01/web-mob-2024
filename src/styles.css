@@ -113,7 +113,39 @@
 
 .container5 {
     min-height: 100vh;
-    background-color: darkgrey;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container6 {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.container7{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container8{
+    display: flex;
+    background-image: url(salibandy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.container9{
+    display: flex;
+    flex-direction: column;
 }
 .content {
     padding: 20px;
@@ -140,13 +172,50 @@
     max-width: 60%;
 }
 
+.content3 {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content4 {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.content5{
+    max-width: 60%;
+    padding-right: 30px;
+}
+
+.content6 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content7 {
+    max-width: 50%;
+}
+
+.content8 {
+    max-width: 50%;
+}
+
 .footer{
     text-align: center;
     background: lightgrey;
     display: flex;
     justify-content: space-around;
     text-align: left;
-    margin-top: 20px;
 }
 
 .logo{
@@ -154,4 +223,42 @@
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.logo2 {
+    max-width: 100%;
+    align-items: center;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    border-bottom: 2px solid black;
+}
+
+td{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.taulu {
+    border-right: 2px solid black;
+}
+
+.playoffs{
+    background-color: darkgoldenrod;
+}
+
+.karsija {
+    background-color: red;
+}
+
+.links{
+    text-decoration: none;
 }
