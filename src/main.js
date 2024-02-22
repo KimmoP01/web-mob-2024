@@ -18,14 +18,14 @@ function Main() {
     return (
         <Router>
             <div className='navbar'>
-                <NavLink to="/web-mob-2024">Etusivu</NavLink>
-                <NavLink to="/historia">Historia</NavLink>
+                <NavLink to="web-mob-2024/">Etusivu</NavLink>
+                <NavLink to="web-mob-2024/historia">Historia</NavLink>
                 <NavLink to="/salibandysuomessa">Salibandy Suomessa</NavLink>
                 <NavLink to="/sarjat">Sarjat</NavLink>
             </div>
             <Routes>
-                <Route path="/web-mob-2024" element={<Koti />} />
-                <Route path="/historia" element={<Historia />} />
+                <Route path="web-mob-2024/" element={<Koti />} />
+                <Route path="web-mob-2024/historia" element={<Historia />} />
                 <Route path="/salibandysuomessa" element={<Suomessa />} />
                 <Route path="/sarjat" element={<Sarjat />} />
             </Routes>
