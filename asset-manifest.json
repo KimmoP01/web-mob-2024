@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/web-mob-2024/static/css/main.e6633752.css",
+    "main.js": "/web-mob-2024/static/js/main.d06b9b8b.js",
+    "static/js/453.78875a3e.chunk.js": "/web-mob-2024/static/js/453.78875a3e.chunk.js",
+    "static/media/salibandy.png": "/web-mob-2024/static/media/salibandy.ea8f3dd04237ff70bac5.png",
+    "static/media/salibandy taustakuva.png": "/web-mob-2024/static/media/salibandy taustakuva.f017e3a88c88314ae242.png",
+    "static/media/salibandylogo.png": "/web-mob-2024/static/media/salibandylogo.69d92d12f81bb3884b95.png",
+    "index.html": "/web-mob-2024/index.html",
+    "main.e6633752.css.map": "/web-mob-2024/static/css/main.e6633752.css.map",
+    "main.d06b9b8b.js.map": "/web-mob-2024/static/js/main.d06b9b8b.js.map",
+    "453.78875a3e.chunk.js.map": "/web-mob-2024/static/js/453.78875a3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6633752.css",
+    "static/js/main.d06b9b8b.js"
+  ]
+}
