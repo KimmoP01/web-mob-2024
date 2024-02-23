@@ -4,6 +4,23 @@ import './styles.css';
 import salibandylogo from './salibandylogo.png';
 import fliigalogo from './fliigalogo.png';
 
+/*
+Author Kimmo Pirinen, 2024
+
+Työssä käytettyjen kuvien lähteet:
+salibandy.png = https://areena.yle.fi/1-3860171
+salibandy taustakuva.png = https://yle.fi/a/3-11257406
+fliigalogo.png = https://fliiga.com/fi/miehet/
+salibandylogo.png = https://salibandy.fi/fi/etusivu/
+
+Työssä käytettyjen tietojen lähteet:
+https://salibandy.fi/fi/etusivu/
+https://fliiga.com/fi/miehet/
+https://fliiga.com/fi/naiset/
+*/
+
+
+
 export function useTitle(title) {
     useEffect(() => {
         const prevTitle = document.title;
@@ -64,7 +81,7 @@ const Koti = () => {
                     <h3>Sarjatoiminta</h3>
                     <article>
                         Suomessa pelataan kilpailullisia otteluita miesten, naisten ja nuorten sarjoissa. Miehillä korkein sarja on F-liiga, mutta sarjoja on F-liigan lisäksi yhteensä seitsemän.
-                        Naisten korkein sarja on nimeltään myös F-liiga. Naisilla sarjoja on yhteensä F-liigan lisäksi viisi. Nuorten osalta sarjat menevät ikäluokittain.
+                        Naisten korkein sarja on nimeltään myös F-liiga. Naisilla sarjoja on yhteensä F-liigan lisäksi viisi.
                         <br></br>
                         <br></br>
                         <Link to="sarjat">Lue lisää</Link>
@@ -105,10 +122,22 @@ const Historia = () => {
                         <article>
                             <h3>Joukkue, pelaajat ja välineet</h3>
                             Joukkueessa saa olla enintään 20 pelaajaa. Kentällä saa olla samanaikaisesti viisi kenttäpelaajaa ja maalivahti. Maalivahdin voi korvata ylimääräisellä kenttäpelaajalla.
-                            Kaikilla joukkueen pelaajilla tulee olla kilpailullisissa otteluissa yhtenäinen asu.
+                            Kaikilla joukkueen pelaajilla tulee olla kilpailullisissa otteluissa yhtenäinen asu. Virallisissa otteluissa kaikkien pelipaitojen tulee olla numeroituja. Pelinumero saa olla mikä tahansa numero 
+                            1 ja 99 välillä, mutta numero 1 ei ole kenttäpelaajan käytettävissä. <br></br>
+                            Maalivahti ei saa käyttää mailaa. Joukkueen kapteenilla on oltava näkyvä käsivarsinauha. Pelaajat eivät saa käyttää varusteita, jotka saattavat aiheuttaa loukkaantumisia. Näihin kuuluu esimerkiksi 
+                            rannekellot ja korvakorut. Lopulta ottelun erotuomarilla on päätösvalta todeta varuste vaaralliseksi.
+                            Pelaajien mailojen on oltava kansainvälisen salibandyliiton IFF:n hyväksymiä. Tällöin niistä löytyy liiton merkki. Mailan lapa ei saa olla teräväreunainen ja sen käyryys saa olla maksimissaa 30 mm.
+                        </article>
+                        <article>
+                            <h3>Pelikatkot</h3>
+                            Pelikatko voi aiheutua muun muassa maalista, rikkeestä, loukkaantumisesta tai, jos pallo ylittää sallitun sivurajan. Pelinjatkamistapoja ovat kiistapallo, sisäänlyönti, vapaalyönti ja rangaistuslaukaus.
+                            Pelin erät aloitetaan kiistapallolla. Peliä jatketaan kiistapallolla myös maalien jälkeen sekä tilanteissa, missä kummankaan joukkueen hyväksi ei voida määrätä muuta pelinjatkamiskeinoa. Kun pallo menee kaukalon ulkopuolelle, peliä jatketaan sisäänlyönnillä.
+                            Sisäänlyönnin suorittaa joukkue, joka ei pelannut palloa yli rajojen. Kun joukkueen pelaajaa on rikottu, peliä jatketaan vapaalyönnillä.
                         </article>
                         <br></br>
-                        <p>Lähde: salibandy.fi/fi/info/saannot/pelisaannot/</p>
+                        <p>Lisää säännöistä osoitteessa <a href = "https://salibandy.fi/fi/info/saannot/pelisaannot/" target = "_blank" rel = "noreferrer">Salibandy.fi</a></p>
+                        <br></br>
+                        <p style={{overflow: 'auto', fontStyle: 'italic'}}>Lähde: salibandy.fi/fi/info/saannot/pelisaannot/</p>
                     </div>
                 </div>
             </div>
@@ -166,7 +195,7 @@ const Suomessa = () => {
                         </ul>
                     </article>
                     <br></br>
-                    <p>Lähde: salibandy.fi/fi/maajoukkueet/miehet/</p>
+                    <p style={{fontStyle: 'italic'}}>Lähde: salibandy.fi/fi/maajoukkueet/miehet/</p>
                     <br></br>
                     <article>
                         <h3>Naisten maajoukkue</h3>
@@ -190,7 +219,7 @@ const Suomessa = () => {
                         <li>Prossia: 1995</li>
                     </ul>
                     <br></br>
-                    <p>Lähde: salibandy.fi/fi/maajoukkueet/naiset/</p>
+                    <p style={{fontStyle: 'italic'}}>Lähde: salibandy.fi/fi/maajoukkueet/naiset/</p>
                     <br></br>
                     <article>
                         <h3>Nuorten maajoukkueet</h3>
@@ -211,7 +240,7 @@ const Sarjat = () => {
                 <div className='container6'>
                     <div className='content3'>
                         <div className='content5'>
-                            <a href="https://fliiga.com/fi/miehet/" target="_blank"><img src={fliigalogo} alt="f-liiga logo" style={{ width: '100px' }}></img></a>
+                            <a href="https://fliiga.com/fi/miehet/" target="_blank" rel = "noreferrer"><img src={fliigalogo} alt="f-liiga logo" style={{ width: '100px' }}></img></a>
                             <h2>F-liiga</h2>
                             <article>
                                 <h3>Miesten F-liiga</h3>
@@ -274,7 +303,7 @@ const Sarjat = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Sarjataulukko 22.2.2024 <a href="https://tulospalvelu.fliiga.com/category/402!sb2023/group/2" target="_blank" className='links'>  Katso lisää F-liigan sivuilta</a></p>
+                            <p>Sarjataulukko 22.2.2024 <a href="https://tulospalvelu.fliiga.com/category/402!sb2023/group/2" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta</a></p>
                             <article>
                                 <h4>Taulukon lyhenteet</h4>
                                 O = Ottelut <br></br> V = Voitot <br></br> JV = Jatkoaikavoitot <br></br>
@@ -287,7 +316,7 @@ const Sarjat = () => {
                 <div className='container7'>
                     <div className='content3'>
                         <div className='content5'>
-                            <a href="https://fliiga.com/fi/naiset/" target="_blank"><img src={fliigalogo} alt="f-liiga logo" style={{ width: '100px' }}></img></a>
+                            <a href="https://fliiga.com/fi/naiset/" target="_blank" rel = "noreferrer"><img src={fliigalogo} alt="f-liiga logo" style={{ width: '100px' }}></img></a>
                             <h2>F-liiga</h2>
                             <article>
                                 <h3>Naisten F-liiga</h3>
@@ -350,7 +379,7 @@ const Sarjat = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Sarjataulukko 22.2.2024 <a href="https://tulospalvelu.fliiga.com/category/384!sb2023/group/1" target="_blank" className='links'>  Katso lisää F-liigan sivuilta</a></p>
+                            <p>Sarjataulukko 22.2.2024 <a href="https://tulospalvelu.fliiga.com/category/384!sb2023/group/1" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta</a></p>
                             <article>
                                 <h4>Taulukon lyhenteet</h4>
                                 O = Ottelut <br></br> V = Voitot <br></br> JV = Jatkoaikavoitot <br></br>
@@ -365,16 +394,78 @@ const Sarjat = () => {
             <img src={salibandylogo} alt='salibandyliitto-logo' className='logo2'/>
             </div>
             <div className='container8'>
-                <div className='container6'>
                     <div className='content6'>
                         <div className='content7'>
                             <h3>Muut miesten sarjatasot</h3>
+                            <article>
+                            <h4>Inssi-Divari</h4>
+                            Inssi-Divari on miesten toiseksi korkein sarjataso Suomessa. Sarja on saanut nimensä Insinööriliiton ja Salibandyliiton välisestä yhteistyösopimuksesta. 
+                            Kaudella 2023-2024 sarjassa pelaa 14 joukkuetta. Kausi alkaa runkosarjalla, missä jokainen joukkue pelaa 26 ottelua. Tällöin jokainen joukkue kohtaa kahdesti.
+                            Runkosarjan päätyttyä sarjan kuusi parasta joukkuetta jatkaa kauttaan F-liigan karsinnoissa. Täällä karsintoihin liittyy mukaan F-liigan runkosarjan kaksi viimeistä joukkuetta.
+                            Inssi-Divarin runkosarjan sijoille 12. ja 13. sijoittuneet joukkueet jatkavat kauttaan putoamiskarsinnoissa. Täällä joukkueet pelaavat pudotuspelien kaltaiset karsinnat alemman sarjatason,
+                            Suomisarjan, kolmen lohkon kahden parhaan kanssa. Näin karsinnoissa on yhteensä kahdeksan joukkuetta pelaamassa sarjapaikasta. Putoamiskarsinnat pelataan paras kolmesta -järjestelmällä. 
+                            Putoamiskarsintojen voittajat pelaavat Inssi-Divarin seuraavalla kaudella. Runkosarjan viimeiseksi jäänyt joukkue putoaa suoraan Suomisarjaan. <br></br><br></br>
+                            F-liiga karsinnassa F-liigan runkosarjan sijoille 11. ja 12. sijoittuneet joukkueet pelaavat kaksivaiheiset pudotuspelit Inssi-Divarin runkosarjan kuuden parhaan kanssa. Pudotuspelien voittajat, kaksi joukkuetta, pelaavat 
+                            F-liigassa seuraavalla kaudella.<br></br><br></br>
+                            Lisätietoa Inssi-Divarista löydät osoitteesta <a href = "https://salibandy.fi/fi/inssidivari/info/" target = "_blank" rel= "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/444!sb2023/group/1" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            </article>
+                            <br></br>
+                            <article>
+                            <h4>Suomisarja</h4>
+                            Suomisarja on miesten kolmanneksi korkein sarjataso. Sarjassa pelaavat joukkueet on jaettu kolmeen eri lohkoon. Kausi koostuu lohkoissa pelattavasta runkosarjasta sekä pudotuspeleistä.
+                            Runkosarjassa joukkueet kohtaavat toisensa kahdesti. Runkosarjan päätyttyä jokaisen kolmen lohkon neljä parasta joukkuetta pelaavat yhden kierroksen pudotuspelit. Näistä voittajat, yhteensä kuusi joukkuetta, etenee Divarikarsintoihin.
+                            Runkosarjassa lohkojen 8. ja 9. sijottuneet joukkueet pelaavat keskenään säilymiskarsinnat. Nämä karsinnat pelataan paras kolmesta -järjestelmällä. Otteluparien voittajat säilyttävät paikkansa Suomisarjassa, mutta häviäjät jatkavat kauttaan putoamiskarsinnoissa.
+                            Putoamiskarsinnoissa pelaavat säilymiskarsinnoissa hävinneet joukkueet, lohkojen toiseksi ja kolmanneksi viimeiset joukkueet sekä 2.divisioonan lohkoista jatkoon edenneet. Kaikkiaan putoamiskarsinnoissa muodostuu seitsemän otteluparia. Näistä voittajat pelaavat Suomisarjan seuraavalla 
+                            kaudella ja hävinneet joukkueet pelaavat 2.divisioonassa. Runkosarjan päätyttyä lohkojen viimeiset putoavat suoraan 2.divisioonaan.<br></br><br></br>
+                            Lisätietoa Suomisarjasta löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/suomisarja/suomisarja-miehet/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/875!sb2023/tables" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            </article>
+                            <br></br>
+                            <article>
+                            <h4>Alueelliset divisioonat</h4>
+                            Suomisarjasta alemmat sarjatasot pelataan alueellisesti. Alueet ovat: Etelä-Suomi, Kaakkois-Suomi, Länsirannikko, Pohjanmaa, Pohjois-Suomi, Savo-Karjala ja Sisä-Suomi.
+                            Alueellisia divisioonia on 2.divisioonasta aina 6.divisioonaan saakka. 6.divisioona on alin sarjataso, joten siellä ei ole putoamiskarsintoja. Alueet, joilla 5.divisioona on alin sarjataso, ei järjestetä
+                            putoamiskarsintoja. 2.divisioona on korkein alueellinen sarjataso, jonka lohkojen parhaat etenevät Suomisarjan nousukarsintaan. Divisioonien väliset nousut ja putoamiset tapahtuvat myös alueittain. Esimerkiksi Etelä-Suomen 2.divisioonasta 
+                            pudotaan Etelä-Suomen 3.divisioonaan.
+                            <br></br><br></br>
+                            Lisätietoa alueellisista divisioonista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/alueelliset-sarjat/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/categories" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            </article>
                         </div>
                         <div className='content8'>
                             <h3>Muut naisten sarjatasot</h3>
+                            <article>
+                            <h4>Naisten Divari</h4>
+                            Naisten Divari on naisten toiseksi korkein sarjataso Suomessa. Kaudella 2023-2024 sarjassa pelaa 10 joukkuetta. Kausi koostuu runkosarjasta ja pudotuspeleistä. Runkosarjan aikana jokainen joukkue kohtaa toisensa kahdesti. Näin jokainen 
+                            joukkue pelaa 18 ottelua runkosarjassa.<br></br> Runkosarjan päätyttyä sijoille 1.-6. sijoittuneet joukkueet jatkavat kauttaan F-liigakarsinnoissa. Täällä pelataan kaksivaiheiset pudotuspelit, johon F-liigan runkosarjan kaksi viimeistä liittyy mukaan.
+                            Otteluparit pelataan paras viidestä- järjestelmällä. Karsintojen voittaneet kaksi joukkuetta pelaavat F-liigan seuraavalla kaudella. Runkosarjassa sijoille 7.-8. sijoittuneet joukkueet jatkavat kauttaan Divarikarsintojen 1.vaiheessa. Sijoille 9. ja 10. sijoittuneet 
+                            joukkueet pelaavat karsintoja suorasta putoamisesta Suomisarjaan. Divarikarsintojen 1.vaiheen hävinnyt joukkue osallistuu Divarikarsintojen 2.vaiheeseen yhdessä pudotuskarsintojen voittaneen joukkueen ja Suomisarjan loppusarjan kahden parhaan joukkueen kanssa. Näistä joukkueista muodostetaan otteluparit, 
+                            ja voittajat pelaavat Naisten Divarissa seuraavalla kaudella.
+                            <br></br><br></br>
+                            Lisätietoa Naisten Divarista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/naisten-divari/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/401!sb2023/group/1" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            </article>
+                            <br></br>
+                            <article>
+                            <h4>Suomisarja</h4>
+                            Suomisarja on naisten kolmanneksi korkein sarjataso. Sarjassa pelaavat joukkueet on jaettu kolmeen lohkoon. Kaudella 2023-2024 lohkot A ja B pelataan 7 joukkueen voimin, missä jokainen kohtaa toisensa kolmesti. Lohkossa C kaikki joukkueet kohtaavat kahdesti, ja lopuksi pelataan lopputurnaus. 
+                            Runkosarjan päätyttyä kaikkien lohkojen kaksi parasta joukkuetta pelaavat loppusarjan. Loppusarjassa pelaa siis kuusi joukkuetta jaettuna kahteen kolmen joukkueen lohkoon. Lohkovaiheessa joukkueet kohtaavat toisensa kerran. Pelien jälkeen lohkojen kaksi parasta jatkaa loppusarjan 2.vaiheeseen. 
+                            2.vaiheessa neljästä joukkueesta muodostetaan otteluparit, joissa lohkojen voittajat pelaavat vastakkain ja toiseksi sijoittuneet vastakkain. Lohkovoittajien otteluparin voittaja nousee suoraan Naisten Divariin. Hävinnyt jatkaa Divarikarsintojen 2.vaiheeseen. Toisen otteluparin voittaja jatkaa myös Divarikarsintojen 
+                            2.vaiheeseen.<br></br> Runkosarjan päätyttyä lohkojen toiseksi viimeiset joukkueet jatkavat pudotuskarsintoihin. Pudotuskarsinnat pelataan turnausmuotoisena, ja 2.divisioonan lohkojen voittaneet joukkueet liittyvät mukaan pelaamaan sarjanoususta. Pudotuskarsinnoissa joukkueet jaetaan kolmeen lohkoon, missä jokaisessa pelaa yksi Suomisarjan joukkue 
+                            ja kaksi 2.divisioonan joukkuetta. Jokainen joukkue kohtaa toisensa kerran. Karsintalohkojen viimeiset joukkueet pelaavat seuraavalla kaudella 2.divisioonassa.<br></br>
+                            Suomisarjan runkosarjan päätyttyä lohkojen viimeiset joukkueet putoavat suoraan alueelliseen 2.divisioonaan.
+                            <br></br><br></br>
+                            Lisää tietoa Suomisarjasta löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/suomisarja/suomisarja-naiset/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/1501!sb2023/tables" target = "_blank" rel = "noreferrer">Tulospalvelusta</a> 
+                            </article>
+                            <br></br>
+                            <article>
+                            <h4>Alueelliset divisioonat</h4>
+                            Suomisarjasta alemmat sarjatasot pelataan alueellisesti. Alueet ovat: Etelä-Suomi, Kaakkois-Suomi, Länsirannikko, Pohjanmaa, Pohjois-Suomi, Savo-Karjala ja Sisä-Suomi.
+                            Alueellisia divisioonia on 2.divisioonasta 4.divisioonaan asti. 4.divisioona on alin sarjataso, joten siellä ei järjestetä putoamiskarsintaa. On myös mahdollista, että 2. tai 3.divisioona 
+                            toimii alueella alimpana sarjatasona. Tällöin niissä ei järjestetä putoamiskarsintaa. 2.divisioona on korkein alueellinen sarjataso, josta lohkojen voittajat osallistuvat Suomisarjan nousukarsintaan. 
+                            Divisioonien väliset nousut ja putoamiset tapahtuvat alueittain. Esimerkiksi Etelä-Suomen 2.divisioonasta pudotaan Etelä-Suomen 3.divisioonaan.
+                            <br></br><br></br>
+                            Lisää tietoa alueellisista sarjoista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/alueelliset-sarjat/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/categories" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            </article>
                         </div>
                     </div>
-                </div>
             </div>
             <Footer></Footer>
         </div>
@@ -394,16 +485,16 @@ const Footer = () => {
                     <br></br>
                     Sähköposti: asiakaspalvelu@salibandy.fi
                     <br></br>
-                    <a href="https://salibandy.fi/fi/etusivu/" target="_blank">salibandy.fi</a>
+                    <a href="https://salibandy.fi/fi/etusivu/" target="_blank" rel = "noreferrer">salibandy.fi</a>
                 </p>
             </div>
             <div>
                 <p>
                     F-liiga
                     <br></br>
-                    <a href="https://fliiga.com/fi/miehet/" target="_blank">fliiga.com</a>
+                    <a href="https://fliiga.com/fi/miehet/" target="_blank" rel = "noreferrer">fliiga.com</a>
                     <br></br>
-                    <a href="https://tulospalvelu.salibandy.fi/home" target="_blank">Tulospalvelu</a>
+                    <a href="https://tulospalvelu.salibandy.fi/home" target="_blank" rel = "noreferrer">Tulospalvelu</a>
                 </p>
             </div>
             <div>
