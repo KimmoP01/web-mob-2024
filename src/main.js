@@ -3,6 +3,10 @@ import { Link, NavLink, Routes, Route, BrowserRouter as Router, useNavigate, use
 import './styles.css';
 import salibandylogo from './salibandylogo.png';
 import fliigalogo from './fliigalogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faMedal } from '@fortawesome/free-solid-svg-icons';
 
 /*
 Author Kimmo Pirinen, 2024
@@ -12,6 +16,9 @@ salibandy.png = https://areena.yle.fi/1-3860171
 salibandy taustakuva.png = https://yle.fi/a/3-11257406
 fliigalogo.png = https://fliiga.com/fi/miehet/
 salibandylogo.png = https://salibandy.fi/fi/etusivu/
+
+Videon lähde:
+https://www.youtube.com/watch?v=rTKhnaFsJGg
 
 Työssä käytettyjen tietojen lähteet:
 https://salibandy.fi/fi/etusivu/
@@ -55,14 +62,22 @@ const Koti = () => {
     return (
         <div className='container'>
             <div className='container2'>
+               <div className='content'>
+                <h3>Info</h3>
+                <article>
+                Tällä sivulla tutustutaan salibandyyn. Sivulla käsitellään lajin historiaa ja sen toimintaa Suomessa.
+                Lisäksi sivulla kerrotaan muutamia lajin sääntöjä, esitellään Suomen maajoukkuetoimintaa ja suomalaisen salibandyn sarjatasoja.
+                Sarjatasoista miesten ja naisten F-liigat ovat tarkemmassa käsittelyssä.
+                </article>
+                </div> 
                 <div className='content'>
                     <h3>Historia</h3>
                     <article>
                         Salibandy kehittyi Ruotsissa 1960-luvun loppupuolella. Aluksi lajin säännöt
-                        olivat jääkiekon ja kaukalopallon kaltaiset.
+                        olivat jääkiekon ja kaukalopallon kaltaiset. Vuonna 1986 Suomen, Ruotsin ja Sveitsin salibandyliitot perustivat kansainvälisen salibandyliitto IFF:n.
                         <br></br>
                         <br></br>
-                        <Link to="historia">Lue lisää</Link>
+                        <Link to="historia" className='links'>Lue lisää <FontAwesomeIcon icon = {faArrowRight}/></Link>
                     </article>
                 </div>
                 <div className='content'>
@@ -74,7 +89,7 @@ const Koti = () => {
                         nuorten osalta.
                         <br></br>
                         <br></br>
-                        <Link to="salibandysuomessa">Lue lisää</Link>
+                        <Link to="salibandysuomessa" className='links'>Lue lisää <FontAwesomeIcon icon = {faArrowRight}/></Link>
                     </article>
                 </div>
                 <div className='content'>
@@ -84,7 +99,7 @@ const Koti = () => {
                         Naisten korkein sarja on nimeltään myös F-liiga. Naisilla sarjoja on yhteensä F-liigan lisäksi viisi.
                         <br></br>
                         <br></br>
-                        <Link to="sarjat">Lue lisää</Link>
+                        <Link to="sarjat" className='links'>Lue lisää <FontAwesomeIcon icon = {faArrowRight}/></Link>
                     </article>
                 </div>
             </div>
@@ -103,10 +118,17 @@ const Historia = () => {
                         <br></br>
                         <article>
                             Salibandy kehittyi Ruotsissa 1960-luvun loppupuolella. Aluksi lajin säännöt
-                            olivat jääkiekon ja kaukalopallon kaltaiset.
+                            olivat jääkiekon ja kaukalopallon kaltaiset. Lajin perussäännöt kirjoitettiin vuonna 1979 ja otteluihin liittyvät säännöt vuonna 1981.
+                            <br></br><br></br>
+                            Vuonna 1986 Suomen, Ruotsin ja Sveitsin salibandyliitot perustivat kanssainvälisen salibandyliitto IFF:n (International Floorball Federation).
+                            IFF järjestää maajoukkueiden välistä kilpailutoimintaa, kuten maailmanmestaruuskilpailut. <br></br>
+                            Ensimmäinen IFF:n järjestämä arvoturnaus salibandyssa oli vuoden 1994 miesten Euroopanmestaruuskilpailut. Euroopanmestaruuskilpailut järjestettiin miehille myös vuonna 1995 ja naisille samana vuonna.
+                            Sittemmin Euroopanmestaruuskilpailuja ei ole järjestetty. <br></br>
+                            Lajin maailmanmestaruuskilpailuja ryhdyttiin pelaamaan vuodesta 1996 alkaen vuosittain. Vuodesta 2008 alkaen miesten MM-kisoja järjestetään vain parillisina vuosina. Muutos tuli myös naiten kisoihin, ja 
+                            vuodesta 2009 lähtien niitä järjestetään joka pariton vuosi.
                         </article>
                         <br></br>
-                        <p>Lähde:</p>
+                        <p style={{fontStyle: 'italic'}}>Lähde: https://en.wikipedia.org/wiki/Floorball</p>
                         <br></br><br></br><br></br>
                         <h2>Säännöt</h2>
                         <br></br>
@@ -135,7 +157,7 @@ const Historia = () => {
                             Sisäänlyönnin suorittaa joukkue, joka ei pelannut palloa yli rajojen. Kun joukkueen pelaajaa on rikottu, peliä jatketaan vapaalyönnillä.
                         </article>
                         <br></br>
-                        <p>Lisää säännöistä osoitteessa <a href = "https://salibandy.fi/fi/info/saannot/pelisaannot/" target = "_blank" rel = "noreferrer">Salibandy.fi</a></p>
+                        <p>Lisää säännöistä osoitteessa <a href = "https://salibandy.fi/fi/info/saannot/pelisaannot/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                         <br></br>
                         <p style={{overflow: 'auto', fontStyle: 'italic'}}>Lähde: salibandy.fi/fi/info/saannot/pelisaannot/</p>
                     </div>
@@ -162,12 +184,17 @@ const Suomessa = () => {
                         naisten sarjoissa. Toiseksi korkeimpana sarjatasona miehillä on Inssi-divari ja naisilla naisten divari. Näistä sarjoista alemmat
                         järjestetään alueittain jaettujen lohkojen kesken. Miesten puolella sarjat ulottuvat aiemmin mainittujen jälkeen aina Suomisarjasta 6.divisioonaan saakka.
                         Naisten puolelta sarjat ulottuvat aiemmin mainittujen jälkeen Suomisarjasta 4.divisioonaan asti. Salibandyliitto järjestää myös junioreiden ja senioreiden sarjatoimintaa.
+                        Junioreiden sarjat järjestetään ikäryhmittäin. Sarjat ovat alueellisia tai koko maan laajuisia SM-sarjoja. Pojilla ikäluokat alkavat 8-vuotiaista, ja viimeinen ikäluokka on 22-vuotiaille.
+                        Tytöillä ikäluokat alkavat 8-vuotiaista ja päättyvät 21-vuotiaiden sarjaan.
 
                     </article>
                     <br></br>
                     <p>Lähde:</p>
                     <br></br><br></br>
                     <h2>Suomen salibandymaajoukkueet</h2>
+                    <br></br>
+                    <iframe width={500} height={350} src='https://www.youtube.com/embed/rTKhnaFsJGg' title='Youtube video'></iframe>
+                    <p>Lisää aiheeseen liittyviä videoita löydät esimerkiksi <a href = "https://www.youtube.com/@SalibandyfiOfficial/videos" target = "_blank" rel = "noreferrer" className='links'>Youtubesta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                     <br></br>
                     <article>
                         <h3>Miesten maajoukkue</h3>
@@ -184,14 +211,14 @@ const Suomessa = () => {
                         <h4>Saavutukset:</h4>
                         <h4>Maailmanmestaruuskilpailut</h4>
                         <ul>
-                            <li>Kultaa: 2008, 2010, 2016, 2018</li>
-                            <li>Hopeaa: 1996, 2000, 2002, 2006, 2012, 2014, 2020</li>
-                            <li>Pronssia: 1998, 2004, 2022</li>
+                            <li><FontAwesomeIcon icon = {faMedal} style={{color:'gold', height: '20px'}}/>Kultaa: 2008, 2010, 2016, 2018</li>
+                            <li><FontAwesomeIcon icon = {faMedal} style={{color:'silver', height: '20px'}}/>Hopeaa: 1996, 2000, 2002, 2006, 2012, 2014, 2020</li>
+                            <li><FontAwesomeIcon icon = {faMedal} style={{color:'rgb(205,127,50)', height:'20px'}}/>Pronssia: 1998, 2004, 2022</li>
                         </ul>
                         <h4>Euroopanmestaruuskilpailut</h4>
                         <ul>
-                            <li>Kultaa: 1995</li>
-                            <li>Hopeaa: 1994</li>
+                            <li><FontAwesomeIcon icon = {faMedal} style={{color:'gold', height:'20px'}}/>Kultaa: 1995</li>
+                            <li><FontAwesomeIcon icon = {faMedal} style={{color:'silver', height:'20px'}}/>Hopeaa: 1994</li>
                         </ul>
                     </article>
                     <br></br>
@@ -210,21 +237,43 @@ const Suomessa = () => {
                     <h4>Saavutukset:</h4>
                     <h4>Maailmanmestaruuskilpailut</h4>
                     <ul>
-                        <li>Kultaa: 1999, 2001</li>
-                        <li>Hopeaa: 1997, 2005, 2007, 2011, 2013, 2015, 2017, 2021, 2023</li>
-                        <li>Pronssia: 2003, 2009, 2019</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'gold', height:'20px'}}/>Kultaa: 1999, 2001</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'silver', height:'20px'}}/>Hopeaa: 1997, 2005, 2007, 2011, 2013, 2015, 2017, 2021, 2023</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'rgb(205,127,50)', height:'20px'}}/>Pronssia: 2003, 2009, 2019</li>
                     </ul>
                     <h4>Euroopanmestaruuskilpailut</h4>
                     <ul>
-                        <li>Prossia: 1995</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'rgb(205,127,50)', height:'20px'}}/>Prossia: 1995</li>
                     </ul>
                     <br></br>
                     <p style={{fontStyle: 'italic'}}>Lähde: salibandy.fi/fi/maajoukkueet/naiset/</p>
                     <br></br>
                     <article>
                         <h3>Nuorten maajoukkueet</h3>
-                        tekstiä...
+                        Suomella on viisi nuorten maajoukkuetta. Kolme eri ikäluokkaa miehillä ja kaksi naisilla. Ikäluokat ovat miesten alle 23-vuotiaat (U23),  miesten alle 19-vuotiaat (U19), poikien alle 17-vuotiaat (U17),
+                        naisten alle 19-vuotiaat (U19) ja tyttöjen alle 17-vuotiaat (U17).<br></br>
+                        Miesten U23 -joukkue ei pelaa kilpailullisia turnauksia, vaan on perustettu täydentämään pelaajapolkua miesten maajoukkuetta kohti. Miesten alle 19-vuotiaiden joukkue on perustettu vuonna 1996, ja joukkue osallistuu ikäluokkansa 
+                        maailmanmestaruuskilpailuihin. Miesten U19-joukkue on saavuttanut maailmanmestaruuskilpailuista yhteensä 12 mitalia. Vuodesta 2009 lähtien miesten alle 19-vuotiaiden maailmanmestaruuskilpailut järjestetään joka pariton vuosi.<br></br>
+                        Naisten U19-joukkue on perustettu vuonna 2000. Ensimmäinen maailmanmestaruuskilpailu oli vuonna 2004. Joukkue on saavuttanut kilpailuissa yhteensä 10 mitalia. Vuodesta 2008 lähtien naisten alle 19-vuotiaiden maailmanmestaruuskilpailut järjestetään joka parillinen vuosi.
                     </article>
+                    <br></br>
+                    <h4>Nuorten maajoukkueiden saavutuksia:</h4>
+                    <h4>Maailmanmestaruuskilpailut</h4>
+                    <h5>Miehet U19</h5>
+                    <ul>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'gold', height:'20px'}}/>Kultaa: 2003, 2011, 2015, 2017</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'silver', height:'20px'}}/>Hopeaa: 2005, 2009, 2021</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'rgb(205,127,50)', height:'20px'}}/>Pronssia: 2001, 2007, 2013, 2019, 2023</li>
+                    </ul>
+                    <h5>Naiset U19</h5>
+                    <ul>
+                    <li><FontAwesomeIcon icon = {faMedal} style={{color:'gold', height:'20px'}}/>Kultaa: 2012, 2020*</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'silver', height:'20px'}}/>Hopeaa: 2004, 2006, 2010, 2014, 2016, 2018</li>
+                        <li><FontAwesomeIcon icon = {faMedal} style={{color:'rgb(205,127,50)', height:'20px'}}/>Pronssia: 2008, 2022</li>
+                    </ul>
+                    <p style={{fontStyle:'italic'}}>*vuoden 2020 kilpailu pelattiin koronapandemian vuoksi vuonna 2021 <br></br><br></br>
+                        Lähde: salibandy.fi/fi/maajoukkueet/
+                    </p>
                 </div>
             </div>
             <Footer></Footer>
@@ -303,7 +352,7 @@ const Sarjat = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Sarjataulukko 22.2.2024 <a href="https://tulospalvelu.fliiga.com/category/402!sb2023/group/2" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta</a></p>
+                            <p>Sarjataulukko 22.2.2024  <br></br><a href="https://tulospalvelu.fliiga.com/category/402!sb2023/group/2" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta<FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                             <article>
                                 <h4>Taulukon lyhenteet</h4>
                                 O = Ottelut <br></br> V = Voitot <br></br> JV = Jatkoaikavoitot <br></br>
@@ -379,7 +428,7 @@ const Sarjat = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Sarjataulukko 22.2.2024 <a href="https://tulospalvelu.fliiga.com/category/384!sb2023/group/1" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta</a></p>
+                            <p>Sarjataulukko 22.2.2024 <br></br><a href="https://tulospalvelu.fliiga.com/category/384!sb2023/group/1" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                             <article>
                                 <h4>Taulukon lyhenteet</h4>
                                 O = Ottelut <br></br> V = Voitot <br></br> JV = Jatkoaikavoitot <br></br>
@@ -407,7 +456,7 @@ const Sarjat = () => {
                             Putoamiskarsintojen voittajat pelaavat Inssi-Divarin seuraavalla kaudella. Runkosarjan viimeiseksi jäänyt joukkue putoaa suoraan Suomisarjaan. <br></br><br></br>
                             F-liiga karsinnassa F-liigan runkosarjan sijoille 11. ja 12. sijoittuneet joukkueet pelaavat kaksivaiheiset pudotuspelit Inssi-Divarin runkosarjan kuuden parhaan kanssa. Pudotuspelien voittajat, kaksi joukkuetta, pelaavat 
                             F-liigassa seuraavalla kaudella.<br></br><br></br>
-                            Lisätietoa Inssi-Divarista löydät osoitteesta <a href = "https://salibandy.fi/fi/inssidivari/info/" target = "_blank" rel= "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/444!sb2023/group/1" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            Lisätietoa Inssi-Divarista löydät osoitteesta <a href = "https://salibandy.fi/fi/inssidivari/info/" target = "_blank" rel= "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a> ja <a href = "https://tulospalvelu.salibandy.fi/category/444!sb2023/group/1" target = "_blank" rel = "noreferrer" className='links'>Tulospalvelusta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                             </article>
                             <br></br>
                             <article>
@@ -417,7 +466,7 @@ const Sarjat = () => {
                             Runkosarjassa lohkojen 8. ja 9. sijottuneet joukkueet pelaavat keskenään säilymiskarsinnat. Nämä karsinnat pelataan paras kolmesta -järjestelmällä. Otteluparien voittajat säilyttävät paikkansa Suomisarjassa, mutta häviäjät jatkavat kauttaan putoamiskarsinnoissa.
                             Putoamiskarsinnoissa pelaavat säilymiskarsinnoissa hävinneet joukkueet, lohkojen toiseksi ja kolmanneksi viimeiset joukkueet sekä 2.divisioonan lohkoista jatkoon edenneet. Kaikkiaan putoamiskarsinnoissa muodostuu seitsemän otteluparia. Näistä voittajat pelaavat Suomisarjan seuraavalla 
                             kaudella ja hävinneet joukkueet pelaavat 2.divisioonassa. Runkosarjan päätyttyä lohkojen viimeiset putoavat suoraan 2.divisioonaan.<br></br><br></br>
-                            Lisätietoa Suomisarjasta löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/suomisarja/suomisarja-miehet/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/875!sb2023/tables" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            Lisätietoa Suomisarjasta löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/suomisarja/suomisarja-miehet/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a> ja <a href = "https://tulospalvelu.salibandy.fi/category/875!sb2023/tables" target = "_blank" rel = "noreferrer" className='links'>Tulospalvelusta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                             </article>
                             <br></br>
                             <article>
@@ -427,7 +476,7 @@ const Sarjat = () => {
                             putoamiskarsintoja. 2.divisioona on korkein alueellinen sarjataso, jonka lohkojen parhaat etenevät Suomisarjan nousukarsintaan. Divisioonien väliset nousut ja putoamiset tapahtuvat myös alueittain. Esimerkiksi Etelä-Suomen 2.divisioonasta 
                             pudotaan Etelä-Suomen 3.divisioonaan.
                             <br></br><br></br>
-                            Lisätietoa alueellisista divisioonista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/alueelliset-sarjat/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/categories" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            Lisätietoa alueellisista divisioonista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/alueelliset-sarjat/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a> ja <a href = "https://tulospalvelu.salibandy.fi/categories" target = "_blank" rel = "noreferrer" className='links'>Tulospalvelusta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                             </article>
                         </div>
                         <div className='content8'>
@@ -440,7 +489,7 @@ const Sarjat = () => {
                             joukkueet pelaavat karsintoja suorasta putoamisesta Suomisarjaan. Divarikarsintojen 1.vaiheen hävinnyt joukkue osallistuu Divarikarsintojen 2.vaiheeseen yhdessä pudotuskarsintojen voittaneen joukkueen ja Suomisarjan loppusarjan kahden parhaan joukkueen kanssa. Näistä joukkueista muodostetaan otteluparit, 
                             ja voittajat pelaavat Naisten Divarissa seuraavalla kaudella.
                             <br></br><br></br>
-                            Lisätietoa Naisten Divarista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/naisten-divari/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/401!sb2023/group/1" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            Lisätietoa Naisten Divarista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/naisten-divari/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a> ja <a href = "https://tulospalvelu.salibandy.fi/category/401!sb2023/group/1" target = "_blank" rel = "noreferrer" className='links'>Tulospalvelusta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                             </article>
                             <br></br>
                             <article>
@@ -452,7 +501,7 @@ const Sarjat = () => {
                             ja kaksi 2.divisioonan joukkuetta. Jokainen joukkue kohtaa toisensa kerran. Karsintalohkojen viimeiset joukkueet pelaavat seuraavalla kaudella 2.divisioonassa.<br></br>
                             Suomisarjan runkosarjan päätyttyä lohkojen viimeiset joukkueet putoavat suoraan alueelliseen 2.divisioonaan.
                             <br></br><br></br>
-                            Lisää tietoa Suomisarjasta löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/suomisarja/suomisarja-naiset/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/category/1501!sb2023/tables" target = "_blank" rel = "noreferrer">Tulospalvelusta</a> 
+                            Lisää tietoa Suomisarjasta löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/suomisarja/suomisarja-naiset/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a> ja <a href = "https://tulospalvelu.salibandy.fi/category/1501!sb2023/tables" target = "_blank" rel = "noreferrer" className='links'>Tulospalvelusta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a> 
                             </article>
                             <br></br>
                             <article>
@@ -462,7 +511,7 @@ const Sarjat = () => {
                             toimii alueella alimpana sarjatasona. Tällöin niissä ei järjestetä putoamiskarsintaa. 2.divisioona on korkein alueellinen sarjataso, josta lohkojen voittajat osallistuvat Suomisarjan nousukarsintaan. 
                             Divisioonien väliset nousut ja putoamiset tapahtuvat alueittain. Esimerkiksi Etelä-Suomen 2.divisioonasta pudotaan Etelä-Suomen 3.divisioonaan.
                             <br></br><br></br>
-                            Lisää tietoa alueellisista sarjoista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/alueelliset-sarjat/" target = "_blank" rel = "noreferrer">Salibandy.fi</a> ja <a href = "https://tulospalvelu.salibandy.fi/categories" target = "_blank" rel = "noreferrer">Tulospalvelusta</a>
+                            Lisää tietoa alueellisista sarjoista löydät osoitteesta <a href = "https://salibandy.fi/fi/sarjat/alueelliset-sarjat/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon= {faArrowUpRightFromSquare}/></a> ja <a href = "https://tulospalvelu.salibandy.fi/categories" target = "_blank" rel = "noreferrer" className='links'>Tulospalvelusta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                             </article>
                         </div>
                     </div>
@@ -485,16 +534,16 @@ const Footer = () => {
                     <br></br>
                     Sähköposti: asiakaspalvelu@salibandy.fi
                     <br></br>
-                    <a href="https://salibandy.fi/fi/etusivu/" target="_blank" rel = "noreferrer">salibandy.fi</a>
+                    <a href="https://salibandy.fi/fi/etusivu/" target="_blank" rel = "noreferrer" className='links'>salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                 </p>
             </div>
             <div>
                 <p>
                     F-liiga
                     <br></br>
-                    <a href="https://fliiga.com/fi/miehet/" target="_blank" rel = "noreferrer">fliiga.com</a>
+                    <a href="https://fliiga.com/fi/miehet/" target="_blank" rel = "noreferrer" className='links'>fliiga.com <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                     <br></br>
-                    <a href="https://tulospalvelu.salibandy.fi/home" target="_blank" rel = "noreferrer">Tulospalvelu</a>
+                    <a href="https://tulospalvelu.salibandy.fi/home" target="_blank" rel = "noreferrer" className='links'>Tulospalvelu <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a>
                 </p>
             </div>
             <div>

@@ -65,6 +65,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-top: 50px;
+    background-attachment: fixed;
 }
 
 /*Salibandy Suomessa sivun tausta*/
@@ -174,6 +175,7 @@
     margin-top: 20px;
     border-radius: 10px;
     max-width: 75%;
+    overflow: auto;
 }
 
 /*Historia sivun tekstien asettelu*/
@@ -287,4 +289,8 @@ td{
 /*Linkkien tyyli*/
 .links{
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
