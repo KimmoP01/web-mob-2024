@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/web-mob-2024/static/css/main.8dfe6e9c.css",
-    "main.js": "/web-mob-2024/static/js/main.cc06ad32.js",
+    "main.css": "/web-mob-2024/static/css/main.3507ff24.css",
+    "main.js": "/web-mob-2024/static/js/main.4e9377b8.js",
     "static/js/453.78875a3e.chunk.js": "/web-mob-2024/static/js/453.78875a3e.chunk.js",
     "static/media/salibandy.png": "/web-mob-2024/static/media/salibandy.ea8f3dd04237ff70bac5.png",
     "static/media/salibandy taustakuva.png": "/web-mob-2024/static/media/salibandy taustakuva.f017e3a88c88314ae242.png",
     "static/media/fliigalogo.png": "/web-mob-2024/static/media/fliigalogo.88147a78e3a2b685f8c6.png",
     "static/media/salibandylogo.png": "/web-mob-2024/static/media/salibandylogo.69d92d12f81bb3884b95.png",
     "index.html": "/web-mob-2024/index.html",
-    "main.8dfe6e9c.css.map": "/web-mob-2024/static/css/main.8dfe6e9c.css.map",
-    "main.cc06ad32.js.map": "/web-mob-2024/static/js/main.cc06ad32.js.map",
+    "main.3507ff24.css.map": "/web-mob-2024/static/css/main.3507ff24.css.map",
+    "main.4e9377b8.js.map": "/web-mob-2024/static/js/main.4e9377b8.js.map",
     "453.78875a3e.chunk.js.map": "/web-mob-2024/static/js/453.78875a3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dfe6e9c.css",
-    "static/js/main.cc06ad32.js"
+    "static/css/main.3507ff24.css",
+    "static/js/main.4e9377b8.js"
   ]
 }
