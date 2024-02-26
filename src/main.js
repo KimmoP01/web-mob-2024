@@ -65,8 +65,8 @@ const Koti = () => {
                <div className='content'>
                 <h3>Info</h3>
                 <article>
-                Tällä sivulla tutustutaan salibandyyn. Sivulla käsitellään lajin historiaa ja sen toimintaa Suomessa.
-                Lisäksi sivulla kerrotaan muutamia lajin sääntöjä, esitellään Suomen maajoukkuetoimintaa ja suomalaisen salibandyn sarjatasoja.
+                Salibandy on yksi suosituimmista urheilulajeista Suomessa. Sivulla käsitellään lajin historiaa ja sen toimintaa Suomessa.
+                Lisäksi sivulla tutustutaan muutamiin lajin sääntöihin, esitellään Suomen maajoukkuetoimintaa ja suomalaisen salibandyn sarjatasoja.
                 Sarjatasoista miesten ja naisten F-liigat ovat tarkemmassa käsittelyssä.
                 </article>
                 </div> 
@@ -118,7 +118,8 @@ const Historia = () => {
                         <br></br>
                         <article>
                             Salibandy kehittyi Ruotsissa 1960-luvun loppupuolella. Aluksi lajin säännöt
-                            olivat jääkiekon ja kaukalopallon kaltaiset. Lajin perussäännöt kirjoitettiin vuonna 1979 ja otteluihin liittyvät säännöt vuonna 1981.
+                            olivat jääkiekon ja kaukalopallon kaltaiset. Salibandya pelattiin alussa ulkona esimerkiksi kouluissa, mutta nopeasti siitä kehittyi virallinen urheilulaji.
+                            Laji keräsi suosiota ensimmäisenä Pohjoismaissa. Lajin perussäännöt kirjoitettiin vuonna 1979 ja otteluihin liittyvät säännöt vuonna 1981.
                             <br></br><br></br>
                             Vuonna 1986 Suomen, Ruotsin ja Sveitsin salibandyliitot perustivat kanssainvälisen salibandyliitto IFF:n (International Floorball Federation).
                             IFF järjestää maajoukkueiden välistä kilpailutoimintaa, kuten maailmanmestaruuskilpailut. <br></br>
@@ -128,7 +129,7 @@ const Historia = () => {
                             vuodesta 2009 lähtien niitä järjestetään joka pariton vuosi.
                         </article>
                         <br></br>
-                        <p style={{fontStyle: 'italic'}}>Lähde: https://en.wikipedia.org/wiki/Floorball</p>
+                        <p style={{fontStyle: 'italic'}}>Lähde: en.wikipedia.org/wiki/Floorball</p>
                         <br></br><br></br><br></br>
                         <h2>Säännöt</h2>
                         <br></br>
@@ -155,6 +156,15 @@ const Historia = () => {
                             Pelikatko voi aiheutua muun muassa maalista, rikkeestä, loukkaantumisesta tai, jos pallo ylittää sallitun sivurajan. Pelinjatkamistapoja ovat kiistapallo, sisäänlyönti, vapaalyönti ja rangaistuslaukaus.
                             Pelin erät aloitetaan kiistapallolla. Peliä jatketaan kiistapallolla myös maalien jälkeen sekä tilanteissa, missä kummankaan joukkueen hyväksi ei voida määrätä muuta pelinjatkamiskeinoa. Kun pallo menee kaukalon ulkopuolelle, peliä jatketaan sisäänlyönnillä.
                             Sisäänlyönnin suorittaa joukkue, joka ei pelannut palloa yli rajojen. Kun joukkueen pelaajaa on rikottu, peliä jatketaan vapaalyönnillä.
+                        </article>
+                        <article>
+                            <h3>Rangaistukset</h3>
+                            Pelissä joidenkin rikkeiden tapahtuessa rikkeen tekevälle pelaajalle voidaan antaa rangaistus, tuttavallisemmin jäähy. Mutta on myös olemassa joukkuerangaistuksia. Yksi sellainen on liikaa pelaajia kentällä. Tällöin joukkueesta yksi pelaaja kärsii kahden minuutin rangaistuksen.
+                            Jos pelaaja tekee jäähyyn oikeuttavan rikkeen, mutta pallo pysyy rikotulla joukkueella, seuraa siirretty rangaistus. Tällöin peli jatkuu seuraavaan pelikatkoon saakka, tai kunnes rikkeen tehnyt joukkue koskee palloon. Mikäli siirretyn rangaistuksen aikana syntyy maali, jäähyä ei tarvitse kärsiä.
+                            Kahden minuutin tuomittu rangaistus voi päättyä aiemmin, jos ylivoimalla pelaava joukkue tekee maalin. <br></br>
+                            Pelaajalle voidaan myös tuomita 10 minuutin henkilökohtainen rangaistus esimerkiksi epäurheilijamaisesta käytöksestä. Tällöin pelaaja kärsii 10 minuutin rangaistuksen, joka ei pääty aiemmin, ellei ottelu pääty ennen rangaistuksen päättymistä. Joukkue pelaa alivoimaa kaksi minuuttia, jonka kärsii toinen joukkueen pelaaja.
+                            <br></br>
+                            Kahden minuutin rangaistukseen johtavia syitä voivat olla muun muassa varomaton mailalla pelaaminen, varomaton fyysinen pelaaminen, pelaaja rikkoo kolmen metrin etäisyyssääntöä sisäänlyönnissä tai mailaan lyöminen.
                         </article>
                         <br></br>
                         <p>Lisää säännöistä osoitteessa <a href = "https://salibandy.fi/fi/info/saannot/pelisaannot/" target = "_blank" rel = "noreferrer" className='links'>Salibandy.fi <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
@@ -189,11 +199,11 @@ const Suomessa = () => {
 
                     </article>
                     <br></br>
-                    <p>Lähde:</p>
+                    <p style={{fontStyle:'italic'}}>Lähde: fi.wikipedia.org/wiki/Suomen_Salibandyliitto</p>
                     <br></br><br></br>
                     <h2>Suomen salibandymaajoukkueet</h2>
                     <br></br>
-                    <iframe width={500} height={350} src='https://www.youtube.com/embed/rTKhnaFsJGg' title='Youtube video'></iframe>
+                    <iframe width='450' height='300' src='https://www.youtube.com/embed/rTKhnaFsJGg' title='Youtube video'></iframe>
                     <p>Lisää aiheeseen liittyviä videoita löydät esimerkiksi <a href = "https://www.youtube.com/@SalibandyfiOfficial/videos" target = "_blank" rel = "noreferrer" className='links'>Youtubesta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                     <br></br>
                     <article>
