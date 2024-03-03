@@ -203,7 +203,7 @@ const Suomessa = () => {
                     <br></br><br></br>
                     <h2>Suomen salibandymaajoukkueet</h2>
                     <br></br>
-                    <iframe width='450' height='300' src='https://www.youtube.com/embed/rTKhnaFsJGg' title='Youtube video'></iframe>
+                    <iframe className='iframestyle' src='https://www.youtube.com/embed/rTKhnaFsJGg' title='Youtube video'></iframe>
                     <p>Lisää aiheeseen liittyviä videoita löydät esimerkiksi <a href = "https://www.youtube.com/@SalibandyfiOfficial/videos" target = "_blank" rel = "noreferrer" className='links'>Youtubesta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                     <br></br>
                     <article>
@@ -303,7 +303,7 @@ const Sarjat = () => {
                             <h2>F-liiga</h2>
                             <article>
                                 <h3>Miesten F-liiga</h3>
-                                F-liiga toimii miesten sarjoissa korkeimpana tasona Suomessa. Kaudella 2023-2024 liigassa pelaa 12 joukkuetta,yhdeksästä eri kaupungista. Kaudelle hallitsevana mestarina lähti
+                                F-liiga toimii miesten sarjoissa korkeimpana tasona Suomessa. Kaudella 2023-2024 liigassa pelaa 12 joukkuetta, yhdeksästä eri kaupungista. Kaudelle hallitsevana mestarina lähti
                                 Turun Palloseura (TPS). Turusta on myös kotoisin FBC Turku. Seinäjoelta on kaksi joukkuetta, SPV ja Nurmon Jymy. Espoosta kaksi joukkuetta Oilers ja Indians.
                                 Liigassa pelaavat myös Tampereen Classic, Nokian KrP, Jyväskylän Happee, Oulun OLS, Helsingin EräViikingit ja Lahden LASB. <br></br><br></br> Kausi jakaantuu kahteen osaan: runkosarjaan ja pudotuspeleihin.
                                 Runkosarja pelataan ensin, ja sen aikana jokainen joukkue pelaa 33 ottelua. Tällöin joukkueet kohtaavat toisensa kolmesti runkosarjan aikana. Runkosarjan päätyttyä sijoille 1.-8. sijoittuneet
@@ -401,44 +401,44 @@ const Sarjat = () => {
                                 </thead>
                                 <tbody>
                                     <tr className='playoffs'>
-                                        <td>1.</td><td className='taulu'>Classic</td><td>29</td><td>24</td><td>1</td><td>0</td><td>4</td><td>230</td><td>119</td><td>74</td>
+                                        <td>1.</td><td className='taulu'>Classic</td><td>22</td><td>17</td><td>2</td><td>0</td><td>3</td><td>141</td><td>67</td><td>55</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>2.</td><td className='taulu'>Oilers</td><td>29</td><td>23</td><td>0</td><td>1</td><td>5</td><td>212</td><td>129</td><td>70</td>
+                                        <td>2.</td><td className='taulu'>TPS</td><td>22</td><td>17</td><td>0</td><td>0</td><td>5</td><td>169</td><td>60</td><td>51</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>3.</td><td className='taulu'>Nokian KrP</td><td>29</td><td>21</td><td>1</td><td>0</td><td>7</td><td>225</td><td>140</td><td>65</td>
+                                        <td>3.</td><td className='taulu'>FBC Loisto</td><td>22</td><td>15</td><td>1</td><td>0</td><td>6</td><td>141</td><td>90</td><td>47</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>4.</td><td className='taulu'>Indians</td><td>29</td><td>14</td><td>4</td><td>3</td><td>8</td><td>190</td><td>136</td><td>53</td>
+                                        <td>4.</td><td className='taulu'>SaiPa</td><td>22</td><td>14</td><td>1</td><td>1</td><td>6</td><td>118</td><td>71</td><td>45</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>5.</td><td className='taulu'>SPV</td><td>29</td><td>15</td><td>2</td><td>2</td><td>10</td><td>181</td><td>149</td><td>51</td>
+                                        <td>5.</td><td className='taulu'>EräViikingit</td><td>22</td><td>13</td><td>2</td><td>1</td><td>6</td><td>94</td><td>84</td><td>44</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>6.</td><td className='taulu'>TPS</td><td>29</td><td>15</td><td>2</td><td>1</td><td>11</td><td>170</td><td>135</td><td>50</td>
+                                        <td>6.</td><td className='taulu'>SSRA</td><td>22</td><td>10</td><td>1</td><td>0</td><td>11</td><td>106</td><td>85</td><td>32</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>7.</td><td className='taulu'>Happee</td><td>29</td><td>13</td><td>3</td><td>2</td><td>11</td><td>164</td><td>155</td><td>45</td>
+                                        <td>7.</td><td className='taulu'>PSS</td><td>22</td><td>10</td><td>0</td><td>2</td><td>10</td><td>83</td><td>80</td><td>32</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>8.</td><td className='taulu'>OLS</td><td>29</td><td>10</td><td>1</td><td>4</td><td>14</td><td>150</td><td>163</td><td>36</td>
+                                        <td>8.</td><td className='taulu'>SB-Pro</td><td>22</td><td>9</td><td>1</td><td>2</td><td>10</td><td>103</td><td>97</td><td>31</td>
                                     </tr>
                                     <tr>
-                                        <td>9.</td><td className='taulu'>LASB</td><td>29</td><td>9</td><td>1</td><td>0</td><td>19</td><td>113</td><td>190</td><td>29</td>
+                                        <td>9.</td><td className='taulu'>KooVee</td><td>22</td><td>6</td><td>0</td><td>1</td><td>15</td><td>84</td><td>136</td><td>19</td>
                                     </tr>
                                     <tr>
-                                        <td>10.</td><td className='taulu'>Jymy</td><td>29</td><td>6</td><td>2</td><td>1</td><td>20</td><td>118</td><td>181</td><td>23</td>
+                                        <td>10.</td><td className='taulu'>ÅIF</td><td>22</td><td>6</td><td>0</td><td>1</td><td>15</td><td>63</td><td>120</td><td>19</td>
                                     </tr>
                                     <tr className='karsija'>
-                                        <td>11.</td><td className='taulu'>EräViikingit</td><td>29</td><td>5</td><td>0</td><td>1</td><td>23</td><td>117</td><td>232</td><td>16</td>
+                                        <td>11.</td><td className='taulu'>O2-Jyväskylä</td><td>22</td><td>4</td><td>1</td><td>0</td><td>17</td><td>70</td><td>152</td><td>14</td>
                                     </tr>
                                     <tr className='karsija'>
-                                        <td>12.</td><td className='taulu'>FBC Turku</td><td>29</td><td>1</td><td>1</td><td>3</td><td>24</td><td>101</td><td>242</td><td>8</td>
+                                        <td>12.</td><td className='taulu'>Welhot</td><td>22</td><td>0</td><td>2</td><td>3</td><td>17</td><td>65</td><td>195</td><td>7</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Sarjataulukko 22.2.2024 <br></br><a href="https://tulospalvelu.fliiga.com/category/384!sb2023/group/1" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
+                            <p>Sarjataulukko 3.3.2024 <br></br><a href="https://tulospalvelu.fliiga.com/category/384!sb2023/group/1" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta <FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                             <article>
                                 <h4>Taulukon lyhenteet</h4>
                                 O = Ottelut <br></br> V = Voitot <br></br> JV = Jatkoaikavoitot <br></br>
