@@ -55,6 +55,7 @@ function Main() {
                 <Route path="web-mob-2024/historia" element={<Historia />} />
                 <Route path="web-mob-2024/salibandysuomessa" element={<Suomessa />} />
                 <Route path="web-mob-2024/sarjat" element={<Sarjat />} />
+                <Route path = "*" element={<Koti/>}/>
             </Routes>
         </Router>
     )
