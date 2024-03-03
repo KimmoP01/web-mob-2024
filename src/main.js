@@ -24,6 +24,8 @@ Työssä käytettyjen tietojen lähteet:
 https://salibandy.fi/fi/etusivu/
 https://fliiga.com/fi/miehet/
 https://fliiga.com/fi/naiset/
+https://en.wikipedia.org/wiki/Floorball
+https://fi.wikipedia.org/wiki/Salibandy
 */
 
 
@@ -67,7 +69,7 @@ const Koti = () => {
                 <article>
                 Salibandy on yksi suosituimmista urheilulajeista Suomessa. Sivulla käsitellään lajin historiaa ja sen toimintaa Suomessa.
                 Lisäksi sivulla tutustutaan muutamiin lajin sääntöihin, esitellään Suomen maajoukkuetoimintaa ja suomalaisen salibandyn sarjatasoja.
-                Sarjatasoista miesten ja naisten F-liigat ovat tarkemmassa käsittelyssä.
+                Miesten ja naisten korkeimmat sarjatasot eli F-liigat ovat tarkemmassa käsittelyssä.
                 </article>
                 </div> 
                 <div className='content'>
@@ -95,8 +97,8 @@ const Koti = () => {
                 <div className='content'>
                     <h3>Sarjatoiminta</h3>
                     <article>
-                        Suomessa pelataan kilpailullisia otteluita miesten, naisten ja nuorten sarjoissa. Miehillä korkein sarja on F-liiga, mutta sarjoja on F-liigan lisäksi yhteensä seitsemän.
-                        Naisten korkein sarja on nimeltään myös F-liiga. Naisilla sarjoja on yhteensä F-liigan lisäksi viisi.
+                        Suomessa pelataan kilpailullisia otteluita miesten, naisten ja nuorten sarjoissa. Miehillä korkein sarja on F-liiga, mutta sarjatasoja on sen lisäksi yhteensä seitsemän.
+                        Naisten korkein sarja on nimeltään myös F-liiga. Naisilla sarjatasoja on yhteensä F-liigan lisäksi viisi.
                         <br></br>
                         <br></br>
                         <Link to="sarjat" className='links'>Lue lisää <FontAwesomeIcon icon = {faArrowRight}/></Link>
@@ -117,15 +119,16 @@ const Historia = () => {
                         <h2>Salibandyn historia</h2>
                         <br></br>
                         <article>
-                            Salibandy kehittyi Ruotsissa 1960-luvun loppupuolella. Aluksi lajin säännöt
+                            Salibandy on sisätiloissa pelattava mailapeli. Laji kehittyi Ruotsissa 1960-luvun loppupuolella. Aluksi lajin säännöt
                             olivat jääkiekon ja kaukalopallon kaltaiset. Salibandya pelattiin alussa ulkona esimerkiksi kouluissa, mutta nopeasti siitä kehittyi virallinen urheilulaji.
-                            Laji keräsi suosiota ensimmäisenä Pohjoismaissa. Lajin perussäännöt kirjoitettiin vuonna 1979 ja otteluihin liittyvät säännöt vuonna 1981.
+                            Laji keräsi suosiota ensimmäisenä Pohjoismaissa. Lajin perussäännöt kirjoitettiin vuonna 1979 ja otteluihin liittyvät säännöt vuonna 1981. Ruotsi oli ensimmäinen maa, joka perusti salibandyssa lajiliiton. 
+                            Se tapahtui vuonna 1981, ja samalla lajin viralliseksi nimeksi asetettiin innebandy (suom. salibandy).
                             <br></br><br></br>
                             Vuonna 1986 Suomen, Ruotsin ja Sveitsin salibandyliitot perustivat kanssainvälisen salibandyliitto IFF:n (International Floorball Federation).
                             IFF järjestää maajoukkueiden välistä kilpailutoimintaa, kuten maailmanmestaruuskilpailut. <br></br>
                             Ensimmäinen IFF:n järjestämä arvoturnaus salibandyssa oli vuoden 1994 miesten Euroopanmestaruuskilpailut. Euroopanmestaruuskilpailut järjestettiin miehille myös vuonna 1995 ja naisille samana vuonna.
                             Sittemmin Euroopanmestaruuskilpailuja ei ole järjestetty. <br></br>
-                            Lajin maailmanmestaruuskilpailuja ryhdyttiin pelaamaan vuodesta 1996 alkaen vuosittain. Vuodesta 2008 alkaen miesten MM-kisoja järjestetään vain parillisina vuosina. Muutos tuli myös naiten kisoihin, ja 
+                            Lajin maailmanmestaruuskilpailuja ryhdyttiin pelaamaan vuodesta 1996 alkaen vuosittain. Vuodesta 2008 alkaen miesten MM-kisoja järjestetään vain parillisina vuosina. Muutos tuli myös naisten kisoihin, ja 
                             vuodesta 2009 lähtien niitä järjestetään joka pariton vuosi.
                         </article>
                         <br></br>
@@ -162,7 +165,7 @@ const Historia = () => {
                             Pelissä joidenkin rikkeiden tapahtuessa rikkeen tekevälle pelaajalle voidaan antaa rangaistus, tuttavallisemmin jäähy. Mutta on myös olemassa joukkuerangaistuksia. Yksi sellainen on liikaa pelaajia kentällä. Tällöin joukkueesta yksi pelaaja kärsii kahden minuutin rangaistuksen.
                             Jos pelaaja tekee jäähyyn oikeuttavan rikkeen, mutta pallo pysyy rikotulla joukkueella, seuraa siirretty rangaistus. Tällöin peli jatkuu seuraavaan pelikatkoon saakka, tai kunnes rikkeen tehnyt joukkue koskee palloon. Mikäli siirretyn rangaistuksen aikana syntyy maali, jäähyä ei tarvitse kärsiä.
                             Kahden minuutin tuomittu rangaistus voi päättyä aiemmin, jos ylivoimalla pelaava joukkue tekee maalin. <br></br>
-                            Pelaajalle voidaan myös tuomita 10 minuutin henkilökohtainen rangaistus esimerkiksi epäurheilijamaisesta käytöksestä. Tällöin pelaaja kärsii 10 minuutin rangaistuksen, joka ei pääty aiemmin, ellei ottelu pääty ennen rangaistuksen päättymistä. Joukkue pelaa alivoimaa kaksi minuuttia, jonka kärsii toinen joukkueen pelaaja.
+                            Pelaajalle voidaan myös tuomita 10 minuutin henkilökohtainen rangaistus esimerkiksi epäurheilijamaisesta käytöksestä. Tällöin pelaaja kärsii 10 minuutin rangaistuksen, joka ei pääty aiemmin, ellei ottelu pääty ennen rangaistuksen päättymistä. Sillä käytösrangaistus on henkilökohtainen, joukkue pelaa alivoimaa normaalin kaksi minuuttia, jonka kärsii toinen joukkueen pelaaja.
                             <br></br>
                             Kahden minuutin rangaistukseen johtavia syitä voivat olla muun muassa varomaton mailalla pelaaminen, varomaton fyysinen pelaaminen, pelaaja rikkoo kolmen metrin etäisyyssääntöä sisäänlyönnissä tai mailaan lyöminen.
                         </article>
@@ -187,8 +190,10 @@ const Suomessa = () => {
                     <h2>Salibandy Suomessa</h2>
                     <br></br>
                     <article>
-                        Salibandy levisi Ruotsista Suomeen 1970-luvulla, jonka jälkeen laji alkoi kerätä suosiota maassa.
-                        Suomen salibandyliitto perustettiin vuonna 1985 ja Suomen miesten maajoukkue aloitti toimintansa samana vuonna.
+                        Salibandy levisi Ruotsista Suomeen 1970-luvulla, jonka jälkeen laji alkoi kerätä suosiota maassa. Aluksi lajia kutsuttiin sählyksi, jota pelattiin ulkona etenkin opiskelijaporukoissa. 
+                        Nykyisin nimitys sähly tarkoittaa salibandyn varianttia, missä sääntöjä on muokattu tilanteeseen sopivalla tavalla. Lajin ensimmäinen turnaus Suomessa oli vuonna 1974, jonka järjesti 
+                        Helsingin yliopisto. Kuten Ruotsissa, myös Suomessa laji keräsi alussa eniten suosiota kouluissa ja opiskelijoiden keskuudessa. Suomen salibandyliitto perustettiin vuonna 1985 ja Suomen miesten maajoukkue aloitti toimintansa samana vuonna.
+                        Vuonna 2022 Suomessa oli salibandyliiton rekisterissä 51 281 pelaajaa.
                         <br></br><br></br>
                         Salibandyliitto järjestää Suomessa salibandyn sarjatoiminnan. F-liiga toimii korkeimpana sarjatasona sekä miesten, että
                         naisten sarjoissa. Toiseksi korkeimpana sarjatasona miehillä on Inssi-divari ja naisilla naisten divari. Näistä sarjoista alemmat
@@ -325,44 +330,44 @@ const Sarjat = () => {
                                 </thead>
                                 <tbody>
                                     <tr className='playoffs'>
-                                        <td>1.</td><td className='taulu'>Classic</td><td>29</td><td>24</td><td>1</td><td>0</td><td>4</td><td>230</td><td>119</td><td>74</td>
+                                        <td>1.</td><td className='taulu'>Classic</td><td>32</td><td>26</td><td>1</td><td>1</td><td>4</td><td>252</td><td>136</td><td>81</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>2.</td><td className='taulu'>Oilers</td><td>29</td><td>23</td><td>0</td><td>1</td><td>5</td><td>212</td><td>129</td><td>70</td>
+                                        <td>2.</td><td className='taulu'>Oilers</td><td>31</td><td>25</td><td>0</td><td>1</td><td>5</td><td>235</td><td>134</td><td>76</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>3.</td><td className='taulu'>Nokian KrP</td><td>29</td><td>21</td><td>1</td><td>0</td><td>7</td><td>225</td><td>140</td><td>65</td>
+                                        <td>3.</td><td className='taulu'>Nokian KrP</td><td>31</td><td>21</td><td>3</td><td>0</td><td>7</td><td>238</td><td>151</td><td>69</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>4.</td><td className='taulu'>Indians</td><td>29</td><td>14</td><td>4</td><td>3</td><td>8</td><td>190</td><td>136</td><td>53</td>
+                                        <td>4.</td><td className='taulu'>Indians</td><td>32</td><td>15</td><td>4</td><td>4</td><td>9</td><td>209</td><td>152</td><td>57</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>5.</td><td className='taulu'>SPV</td><td>29</td><td>15</td><td>2</td><td>2</td><td>10</td><td>181</td><td>149</td><td>51</td>
+                                        <td>5.</td><td className='taulu'>TPS</td><td>32</td><td>17</td><td>2</td><td>1</td><td>12</td><td>181</td><td>149</td><td>56</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>6.</td><td className='taulu'>TPS</td><td>29</td><td>15</td><td>2</td><td>1</td><td>11</td><td>170</td><td>135</td><td>50</td>
+                                        <td>6.</td><td className='taulu'>SPV</td><td>31</td><td>15</td><td>3</td><td>2</td><td>11</td><td>190</td><td>158</td><td>53</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>7.</td><td className='taulu'>Happee</td><td>29</td><td>13</td><td>3</td><td>2</td><td>11</td><td>164</td><td>155</td><td>45</td>
+                                        <td>7.</td><td className='taulu'>Happee</td><td>32</td><td>14</td><td>3</td><td>3</td><td>12</td><td>185</td><td>169</td><td>49</td>
                                     </tr>
                                     <tr className='playoffs'>
-                                        <td>8.</td><td className='taulu'>OLS</td><td>29</td><td>10</td><td>1</td><td>4</td><td>14</td><td>150</td><td>163</td><td>36</td>
+                                        <td>8.</td><td className='taulu'>OLS</td><td>31</td><td>10</td><td>1</td><td>4</td><td>16</td><td>157</td><td>176</td><td>36</td>
                                     </tr>
                                     <tr>
-                                        <td>9.</td><td className='taulu'>LASB</td><td>29</td><td>9</td><td>1</td><td>0</td><td>19</td><td>113</td><td>190</td><td>29</td>
+                                        <td>9.</td><td className='taulu'>LASB</td><td>32</td><td>11</td><td>1</td><td>0</td><td>20</td><td>125</td><td>203</td><td>35</td>
                                     </tr>
                                     <tr>
-                                        <td>10.</td><td className='taulu'>Jymy</td><td>29</td><td>6</td><td>2</td><td>1</td><td>20</td><td>118</td><td>181</td><td>23</td>
+                                        <td>10.</td><td className='taulu'>Jymy</td><td>32</td><td>9</td><td>2</td><td>1</td><td>20</td><td>140</td><td>194</td><td>32</td>
                                     </tr>
                                     <tr className='karsija'>
-                                        <td>11.</td><td className='taulu'>EräViikingit</td><td>29</td><td>5</td><td>0</td><td>1</td><td>23</td><td>117</td><td>232</td><td>16</td>
+                                        <td>11.</td><td className='taulu'>EräViikingit</td><td>32</td><td>5</td><td>0</td><td>1</td><td>26</td><td>127</td><td>260</td><td>16</td>
                                     </tr>
                                     <tr className='karsija'>
-                                        <td>12.</td><td className='taulu'>FBC Turku</td><td>29</td><td>1</td><td>1</td><td>3</td><td>24</td><td>101</td><td>242</td><td>8</td>
+                                        <td>12.</td><td className='taulu'>FBC Turku</td><td>32</td><td>1</td><td>1</td><td>3</td><td>27</td><td>112</td><td>269</td><td>8</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Sarjataulukko 22.2.2024  <br></br><a href="https://tulospalvelu.fliiga.com/category/402!sb2023/group/2" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta<FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
+                            <p>Sarjataulukko 3.3.2024  <br></br><a href="https://tulospalvelu.fliiga.com/category/402!sb2023/group/2" target="_blank" rel = "noreferrer" className='links'>  Katso lisää F-liigan sivuilta<FontAwesomeIcon icon = {faArrowUpRightFromSquare}/></a></p>
                             <article>
                                 <h4>Taulukon lyhenteet</h4>
                                 O = Ottelut <br></br> V = Voitot <br></br> JV = Jatkoaikavoitot <br></br>
